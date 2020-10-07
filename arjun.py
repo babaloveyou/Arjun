@@ -248,7 +248,9 @@ try:
             try:
                 finalResult[url] = initialize(url, include, headers, GET, delay, list(paramList), threadCount)
                 if finalResult[url]:
-                    for para in  paramList:
+                    print(url)
+                    for para in  list(paramList):
+                     print(para)
                      print('%s?=%s' %(url,para))
                     
             except ConnectionError:
