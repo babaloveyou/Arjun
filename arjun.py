@@ -248,8 +248,8 @@ try:
             try:
                 finalResult[url] = initialize(url, include, headers, GET, delay, list(paramList), threadCount)
                 if finalResult[url]:
-                    print(url)
-                    print('%s?=%s' % (url,.join(finalResult[url])))
+                    for para in  paramList:
+                     print('%s?=%s' %(url,para))
                     
             except ConnectionError:
                 #print('%s Target has rate limiting in place, please use --stable switch.' % bad)
