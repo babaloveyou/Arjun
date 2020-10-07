@@ -265,6 +265,6 @@ except KeyboardInterrupt:
 # Finally, export to json
 if args.output_file and finalResult:
     print('%s Saving output to JSON file in %s' % (info, args.output_file))
-    print(finalResult)
+    #print(finalResult)
     with open(str(args.output_file), 'w+', encoding="utf8") as json_output:
         json.dump(finalResult, json_output, sort_keys=True, indent=4)
