@@ -225,6 +225,7 @@ def initialize(url, include, headers, GET, delay, paramList, threadCount):
 
         for each in foundParams:
             #print('%s Valid parameter found: %s%s%s' % (good, green, each, end))
+             print('%s?=%s' %(url,each))
             pass
         if not foundParams:
             #print('%s Unable to verify existence of parameters detected by heuristic.' % bad)
