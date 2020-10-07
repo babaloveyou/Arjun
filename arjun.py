@@ -248,6 +248,7 @@ try:
             try:
                 finalResult[url] = initialize(url, include, headers, GET, delay, list(paramList), threadCount)
                 if finalResult[url]:
+                    print 123
                     print('%s?=%s' % (url,good, ', '.join(finalResult[url])))
                     
             except ConnectionError:
