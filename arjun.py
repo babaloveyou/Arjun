@@ -247,6 +247,7 @@ try:
             #print('%s Scanning: %s' % (run, url))
             try:
                 finalResult[url] = initialize(url, include, headers, GET, delay, list(paramList), threadCount)
+                print ( finalResult[url])
                 if finalResult[url]:
                     print(url)
                     for para in  list(paramList):
